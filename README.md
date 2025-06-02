@@ -1,33 +1,132 @@
-🌟 Horóscopo e Gerador de Senhas
+# 🌍 Horóscopo e Gerador de Senhas
 
-Um aplicativo Flutter simples que permite:
+Um aplicativo Flutter que permite:
 
-📜 Visualizar o horóscopo diário selecionando o seu signo.
+* 📌 Consultar horóscopos diários via IA (Gemini API).
+* 🔐 Gerar senhas seguras e personalizadas.
+* 📂 Salvar e exibir o histórico de consultas e senhas no Firebase Realtime Database.
 
-🔐 Gerar senhas seguras com diferentes opções de configuração.
+---
 
-🛠️ Funcionalidades
+## 🛠️ Funcionalidades
 
-Horóscopo Diário:
+* **Consulta de Horóscopo**:
 
-Escolha seu signo e veja a previsão do dia.
+    * Escolha seu signo e receba o horóscopo do dia gerado por IA.
+* **Gerador de Senhas**:
 
-Horóscopos fornecidos pela API pública Horoscope API.
+    * Personalize tamanho e tipo de caracteres (maiúsculas, números, símbolos).
+    * Copie a senha com um clique.
+* **Histórico**:
 
-Gerador de Senhas:
+    * Exibe os horóscopos consultados.
+    * Lista as senhas geradas.
 
-Defina o tamanho da senha.
+---
 
-Opções para incluir letras maiúsculas, números e símbolos.
+## 🚀 Tecnologias Utilizadas
 
-Copiar a senha gerada diretamente para a área de transferência.
+* [Flutter](https://flutter.dev/) 3.22+
+* [Firebase Realtime Database](https://firebase.google.com/products/realtime-database)
+* [Google Gemini API](https://ai.google.dev/)
+* [Firebase Core](https://pub.dev/packages/firebase_core)
+* [Firebase Database](https://pub.dev/packages/firebase_database)
+* [HTTP](https://pub.dev/packages/http)
 
-🚀 Tecnologias Usadas
+---
 
-Flutter 3.22+
+## 📦 Instalação
 
-Dart
+Clone o repositório:
 
-HTTP para consumo de APIs
+```bash
+git clone https://github.com/seuusuario/horoscopo_e_gerador_de_senhas.git
+```
 
-API pública de horóscopo: https://horoscope-app-api.vercel.app
+Entre na pasta do projeto:
+
+```bash
+cd horoscopo_e_gerador_de_senhas
+```
+
+Instale as dependências:
+
+```bash
+flutter pub get
+```
+
+Configure o Firebase:
+
+```bash
+flutterfire configure
+```
+
+Rode o aplicativo:
+
+```bash
+flutter run
+```
+
+---
+
+## 📑 Estrutura do Projeto
+
+```
+lib/
+├── main.dart
+├── pages/
+│   ├── home_page.dart
+│   ├── horoscope_page.dart
+│   └── password_generator_page.dart
+├── services/
+│   ├── horoscope_service.dart
+│   └── firebase_service.dart
+└── utils/
+    └── password_generator.dart
+```
+
+---
+
+## 📊 Regras de Segurança do Firebase
+
+Durante o desenvolvimento, use as seguintes regras para o Realtime Database:
+
+```json
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
+
+🚨 **Atenção:** Para produção, atualize para regras mais seguras, como:
+
+```json
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+```
+
+---
+
+## 🌐 Links Importantes
+
+* [Documentação Flutter](https://docs.flutter.dev/)
+* [Console Firebase](https://console.firebase.google.com/)
+* [Google AI Gemini](https://ai.google.dev/)
+
+---
+
+## 🌟 Autor
+
+Desenvolvido por **\Cesar Pisa**.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais informações.
