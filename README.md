@@ -26,7 +26,7 @@ Um aplicativo Flutter que permite:
 
 ## 🚀 Tecnologias Utilizadas
 
-* [Flutter](https://flutter.dev/) 3.22+
+* [Flutter](https://flutter.dev/) 
 * [Firebase Realtime Database](https://firebase.google.com/products/realtime-database)
 * [Google Gemini API](https://ai.google.dev/)
 * [Firebase Core](https://pub.dev/packages/firebase_core)
@@ -40,7 +40,7 @@ Um aplicativo Flutter que permite:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seuusuario/horoscopo_e_gerador_de_senhas.git
+git clone https://github.com/engPisa/flutter-horoscopo.git
 ```
 
 Entre na pasta do projeto:
@@ -99,18 +99,6 @@ Durante o desenvolvimento, use as seguintes regras para o Realtime Database:
   }
 }
 ```
-
-🚨 **Atenção:** Para produção, atualize para regras mais seguras, como:
-
-```json
-{
-  "rules": {
-    ".read": "auth != null",
-    ".write": "auth != null"
-  }
-}
-```
-
 ---
 
 ## 🌐 Links Importantes
