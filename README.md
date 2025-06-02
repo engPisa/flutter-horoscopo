@@ -121,12 +121,4 @@ Durante o desenvolvimento, use as seguintes regras para o Realtime Database:
 
 ---
 
-## 🌟 Autor
 
-Desenvolvido por **\Cesar Pisa**.
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais informações.
